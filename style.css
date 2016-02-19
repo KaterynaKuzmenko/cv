@@ -1,0 +1,199 @@
+body{
+    color: black;
+    font-family: sans-serif, Arial, Verdana;
+}
+
+/*   info block    */
+
+/*first column language*/
+
+/* не работает ......
+.lan{
+    transform: rotate(-90deg);
+    text-align: center;
+    border-radius: 20px 0px 0px 0px;
+    width: 20px;
+}*/
+
+.lan{
+    text-align: center;
+    border-radius: 20px 0px 0px 0px;
+    opacity: 0.7;
+    width: 20px;
+}
+#en{
+    background: #8B0000;
+    font-size: small;
+}
+#en:hover{
+    background: lightgrey;
+    color: #8B0000;
+}
+#ua{
+    background: #1C1C1C;
+    font-size: small;
+}
+#ua:hover{
+    background: lightgrey;
+    color: #8B0000;
+}
+#ru{
+    background: gray;
+    font-size: small;
+}
+#ru:hover {
+    background: lightgrey;
+    color: #8B0000;
+
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.link:hover{
+    color: #8B0000;
+}
+
+.info {
+    border-collapse: collapse;
+    margin: auto;
+    width: 91.5%;
+    color: white;
+}
+.info td{
+    background: #8B0000;
+    font-size: 106%;
+}
+.info p{
+    margin-bottom: -5px;
+}
+
+
+/*second column img*/
+
+
+#cover_letter_img{
+    height: 88px;
+    width: 101px;
+    -webkit-transition: all 1s ease;
+}
+#cover_letter_img:hover {
+    box-shadow: 0px 0px 0px;
+    height: 94px;
+    width: 108px;
+    margin-left: 2px;
+}
+#column_cover_letter{
+    width: 170px;
+    text-align: center;
+}
+
+/*third column about me*/
+
+#cont-align{
+    width: 54%;
+}
+.font-size-name{
+    font-size: 160%;
+    margin-top: -10px;
+}
+.jun{
+    font-size: x-large;
+    margin-top: 8px;
+}
+.sity{
+    margin-top: 8px;
+}
+
+
+/*  fourth column contact */
+
+.contact{
+    width: 70px;
+    min-width: 70px;
+    height: 25px;
+}
+.fb_img{
+    text-align: left;
+    margin-top: -2px;
+}
+.fb_link{
+    text-decoration: none;
+    color: white;
+}
+.fb_link:hover{
+    color: #4169E1;
+}
+
+
+
+/* heading and table */
+
+.heading{
+    color: #8B0000;
+    width: 20%;
+    vertical-align: top;
+    font-size: 110%;
+}
+table{
+    margin: auto;
+    width: 82%;
+}
+
+.br{
+    height: 50px;
+}
+
+/* experience */
+
+.date{
+    width: 15%;
+    min-width: 155px;
+    height: 20px;
+    vertical-align: top;
+}
+.place{
+    vertical-align: top;
+}
+.place:hover{
+    color: gray;
+
+}
+/* скрываем чекбоксы и блоки с содержанием */
+.hide, .hide + label ~ div {
+    display: none;
+}
+/* вид текста label */
+.hide + label,
+.hide:checked + label {
+    padding: 0px;
+    color: black;
+    cursor: pointer;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: #8B0000;
+    opacity: 0.7;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block;
+    padding: 10px;
+}
+.position{
+    vertical-align: top;
+}
+
+
+
+/* delete */
+#del{
+    margin: auto;
+    text-align: center;
+}
+.del:hover img{
+    filter:alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+}
